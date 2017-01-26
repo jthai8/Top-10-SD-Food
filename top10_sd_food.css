@@ -1,0 +1,144 @@
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  background-color: #8ebbd3;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+p {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+h2 {
+  font-family: 'Maven Pro', sans-serif;
+}
+.aside1, .aside2{
+  flex: 1 100%;
+}
+
+
+.header {
+  font-family: 'Righteous', cursive;
+  border-style: groove;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #8ebbd3;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 20px;
+}
+
+a {
+  margin: 10px;
+}
+.social {
+  text-decoration: none;
+}
+
+.google {
+    text-decoration: none;
+}
+
+.yelp {
+    text-decoration: none;
+}
+
+.random {
+    text-decoration: none;
+}
+
+.aside {
+  color: #5a514b;
+  flex: 1 50%;
+}
+
+.footers {
+  display: flex;
+  text-align: center;
+  /*justify-content: space-between;*/
+}
+
+.footer-left {
+  flex-basis: 32%;
+}
+.footer-center {
+  flex-basis: 32%;
+}
+.footer-right {
+  flex-basis: 32%;
+  text-align:right;
+}
+
+.images {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.footer-center .fa {
+  font-size: 1.8em;
+}
+
+.footer-center .fa-facebook {background-color: #3C599F;}
+.footer-center .fa-instagram {background-color: #3C599F;}
+.footer-center .fa-linkedin {background-color: #3C599F;}
+.footer-center .fa-skype {background-color: #3C599F;}
+
+.footer-center .fa {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8)
+}
+
+.icons-circle {
+  border-radius: 100%;
+}
+
+.images {
+  box-shadow: 10px 10px 12px #3d878e;
+}
+
+.footer-center .fa:hover{
+  box-shadow: 3px 3px 5px #333;
+}
+
+@keyframes hvr-bob {
+  0% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.hvr-bob {
+  display: inline-block;
+}
+
+.hvr-bob:hover {
+  animation: hvr-bob-float, hvr-bob;
+  animation-duration: .1s, 1.5s;
+  animation-delay: 0s, .3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
